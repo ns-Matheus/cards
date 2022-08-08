@@ -1,117 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,400;1,600;1,700&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-}
 
 body {
-    font-family: Varela Round;
+    font-family: 'Noto Sans', sans-serif;
     background: #f1f1f1;
+    color: #f1f1f1;
+
 }
 
-a {
-    text-decoration: none;
+
+.card_image {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+
 }
 
-.container {
-    margin-top:20px;
+.card_image img {
+    width: 180px;
+    left: 0;
 }
 
-.row{
-    position: absolute;
-    display: grid;
-}
 
-/* estilo dos card */
+.texto {}
 
-.card-sl {
-    border-radius: 8px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 8px;
-}
 
-.card-image img {
-    max-height: 100%;
-    max-width: 100%;
-    border-radius: 8px 8px 0px 0;
-}
-
-.card-action {
-    position: relative;
+.km {
     float: right;
-    margin-top: -25px;
-    margin-right: 20px;
-    z-index: 2;
-    color: #E26D5C;
-    background: #fff;
-    border-radius: 100%;
-    padding: 15px;
-    font-size: 15px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card-action:hover {
-    color: #fff;
-    background: #E26D5C;
-    -webkit-animation: pulse 1.5s infinite;
-}
-
-.card-heading {
-    font-size: 18px;
-    font-weight: bold;
-    background: #fff;
-    padding: 10px 15px;
-}
-
-.card-text {
-    padding: 10px 15px;
-    background: #fff;
-    font-size: 14px;
-    color: #636262;
-}
-
-.card-button {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
+.nome_carro {
     width: 100%;
-    background-color: #1F487E;
-    color: #fff;
-    border-radius: 0 0 8px 8px;
-    transition: 1s;
+    text-align: left
 }
 
-.card-button:hover {
-    text-decoration: none;
-    background-color: #1D3461;
-    color: #fff;
+.valor {
+    width: 100%;
+    text-align: right;
+}
+
+.menucarros {
+    width: 250px;
+    padding: 50px;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.perspective {
+  
+
 
 }
 
+.perspectivefilho {
+    object-fit: cover;
+   
+    border-left: 3px solid #f00;
+    -moz-transform: skew(0deg, 12deg);
+    -webkit-transform: skew(0deg, 12deg);
+    -o-transform: skew(0deg, 12deg);
+    -ms-transform: skew(0deg, 12deg);
+    transform: skew(0deg, 12deg);
 
- @-webkit-keyframes pulse {
-    0% {
-        -moz-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
+    z-index: 998;
 
-    70% {
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
-    }
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
 
-    100% {
-        -moz-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-        box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
-    }
+.perspectivefilho:hover {
+    -moz-transform: skew(0deg, 2deg);
+    -webkit-transform: skew(0deg, 2deg);
+    -o-transform: skew(0deg, 2deg);
+    -ms-transform: skew(0deg, 2deg);
+    transform: skew(0deg, 2deg);
+    background-color: rgba(0, 0, 0, 1.0);
+    z-index: 999;
+    cursor: pointer;
 }

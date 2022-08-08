@@ -6,129 +6,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-        <!-- FontAewesome Icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-       
-       <!-- CSS personalizado -->
-        <link rel="stylesheet" href="styles/css/estilo.css">
-    
-    
-    
-        <title>Card</title>
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles/css/estilo.css">
+
+
+
+    <title>Card</title>
 </head>
 
 <body>
     <div class="app">
 
+        <div class="menucarros perspective">
 
 
 
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="card-sl">
-                        <div v-for="lista" class="card-image">
-                            <img src="/styles/img/bmw.png" />
-                        </div>
-                        <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
-                        <div v-model="nome" class="card-heading">
-                            {{Nome Carro}}
-                        </div>
-                        <div v-model="desc" class="card-text">
-                            {{Descricao Carro}}
-                        </div>
-                        <div v-model="value" class="card-text">
-                            {{Valor}}
-                        </div>
-                        <button class="card-button" onclick="">{{Comprar}}</button>
+            <div class="perspectivefilho">
+                <div class="card_image">
+                    <div class="texto nome_carro">{{Nome do carro}}
+                        <div class="texto km">{{KM}}</div>
                     </div>
+
+                    <img src="https://j4v4.site/MC/carros/zion.png" />
+
+                    <div class="texto valor">{{Valor}}</div>
                 </div>
-                <div class="col-sm-3">
-                    <div class="card-sl">
-                        <div v-for="lista" class="card-image">
-                            <img src="/styles/img/bmw.png" />
-                        </div>
-                        <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
-                        <div v-model="nome" class="card-heading">
-                            {{Nome Carro}}
-                        </div>
-                        <div v-model="desc" class="card-text">
-                            {{Descricao Carro}}
-                        </div>
-                        <div v-model="value" class="card-text">
-                            {{Valor}}
-                        </div>
-                        <button class="card-button" onclick="">{{Comprar}}</button>
+            </div>
+            <div class="perspectivefilho">
+                <div class="card_image">
+                    <div class="texto nome_carro">{{Nome do carro}}
+                        <div class="texto km">{{KM}}</div>
                     </div>
+
+                    <img src="https://j4v4.site/MC/carros/gauntlet.png" />
+
+                    <div class="texto valor">{{Valor}}</div>
                 </div>
-                <div class="col-sm-3">
-                    <div class="card-sl">
-                        <div v-for="lista" class="card-image">
-                            <img src="/styles/img/bmw.png" />
-                        </div>
-                        <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
-                        <div v-model="nome" class="card-heading">
-                            {{Nome Carro}}
-                        </div>
-                        <div v-model="desc" class="card-text">
-                            {{Descricao Carro}}
-                        </div>
-                        <div v-model="value" class="card-text">
-                            {{Valor}}
-                        </div>
-                        <button class="card-button" onclick="">{{Comprar}}</button>
+            </div>
+            <div class="perspectivefilho">
+                <div class="card_image">
+                    <div class="texto nome_carro">{{Nome do carro}}
+                        <div class="texto km">{{KM}}</div>
                     </div>
+
+                    <img src="https://j4v4.site/MC/carros/dukes.png" />
+
+                    <div class="texto valor">{{Valor}}</div>
                 </div>
-                <div class="col-sm-3">
-                    <div class="card-sl">
-                        <div v-for="lista" class="card-image">
-                            <img src="/styles/img/bmw.png" />
-                        </div>
-                        <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
-                        <div v-model="nome" class="card-heading">
-                            {{Nome Carro}}
-                        </div>
-                        <div v-model="desc" class="card-text">
-                            {{Descricao Carro}}
-                        </div>
-                        <div v-model="value" class="card-text">
-                            {{Valor}}
-                        </div>
-                        <button class="card-button" onclick="">{{Comprar}}</button>
+            </div>
+            <div class="perspectivefilho">
+                <div class="card_image">
+                    <div class="texto nome_carro">{{Nome do carro}}
+                        <div class="texto km">{{KM}}</div>
                     </div>
+
+                    <img src="https://j4v4.site/MC/carros/buccaneer.png" />
+
+                    <div class="texto valor">{{Valor}}</div>
+                </div>
+            </div>
+            <div class="perspectivefilho">
+                <div class="card_image">
+                    <div class="texto nome_carro">{{Nome do carro}}
+                        <div class="texto km">{{KM}}</div>
+                    </div>
+
+                    <img src="https://j4v4.site/MC/carros/picador.png" />
+
+                    <div class="texto valor">{{Valor}}</div>
+                </div>
+            </div>
+            <div class="perspectivefilho">
+                <div class="card_image">
+                    <div class="texto nome_carro">{{Nome do carro}}
+                        <div class="texto km">{{KM}}</div>
+                    </div>
+
+                    <img src="https://j4v4.site/MC/carros/impaler.png" />
+
+                    <div class="texto valor">{{Valor}}</div>
                 </div>
             </div>
         </div>
-        
 
 
 
 
 
-
-
-
-        <!-- Bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-            integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-            crossorigin="anonymous"></script>
-
-
-        <!-- Vuejs -->
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-
-        <!-- Vuejs personalizado -->
-        <script src="styles/js/vue.js"></script>
 
 </body>
 
