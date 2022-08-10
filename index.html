@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
 
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="styles/css/estilo.css">
@@ -18,74 +23,134 @@
 <body>
     <div class="app">
 
-        <div class="menucarros perspective">
+
+        <header>
+
+            <section class="caixa_search">
+                <input class="caixa_texto" placeholder="Pesquisar Carros">
+                <a class="botao_search" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </section>
+            <div class="icones">
+
+                <a class="iconesair" href="/styles/img/sair.svg">
+                    <img class="img_sair" src="/styles/img/sair.png" alt="sair">
+                </a>
+                <a class="iconeportasabertas" href="/styles/img/porta-aberta.png">
+                    <img class="img_portas_abertas" src="/styles/img/porta-aberta.png" alt="porta-abertas">
+                </a>
+                <a class="iconeportamalas" href="/styles/img/porta-malas.png">
+                    <img class="img_porta_malas" src="/styles/img/porta-malas.png" alt="porta-malas">
+                </a>
+            </div>
+
+        </header>
 
 
 
-            <div class="perspectivefilho">
+
+        <!-- Menu lateral Esquerdo -->
+        <div onclick="mostrarcarro()" class="menucarros barraderolagem">
+
+
+            <div class="left_perspective">
                 <div class="card_image">
-                    <div class="texto nome_carro">{{Nome do carro}}
-                        <div class="texto km">{{KM}}</div>
+                    <div v-model="carname" class="texto_left_left nome_carro">{{Nome do carro}}
+                        <div v-Model="km" class="texto_left km">{{KM}}</div>
                     </div>
 
                     <img src="https://j4v4.site/MC/carros/zion.png" />
 
-                    <div class="texto valor">{{Valor}}</div>
+                    <div v-Model="valor" class="texto_left valor">{{Valor}}</div>
                 </div>
             </div>
-            <div class="perspectivefilho">
+            <div class="left_perspective">
                 <div class="card_image">
-                    <div class="texto nome_carro">{{Nome do carro}}
-                        <div class="texto km">{{KM}}</div>
+                    <div v-model="carname" class="texto_left nome_carro">{{Nome do carro}}
+                        <div v-Model="km" class="texto_left km">{{KM}}</div>
                     </div>
 
                     <img src="https://j4v4.site/MC/carros/gauntlet.png" />
 
-                    <div class="texto valor">{{Valor}}</div>
+                    <div v-Model="valor" class="texto_left valor">{{Valor}}</div>
                 </div>
             </div>
-            <div class="perspectivefilho">
+            <div class="left_perspective">
                 <div class="card_image">
-                    <div class="texto nome_carro">{{Nome do carro}}
-                        <div class="texto km">{{KM}}</div>
+                    <div v-model="carname" class="texto_left nome_carro">{{Nome do carro}}
+                        <div v-Model="km" class="texto_left km">{{KM}}</div>
                     </div>
 
                     <img src="https://j4v4.site/MC/carros/dukes.png" />
 
-                    <div class="texto valor">{{Valor}}</div>
+                    <div v-Model="valor" class="texto_left valor">{{Valor}}</div>
                 </div>
             </div>
-            <div class="perspectivefilho">
+            <div class="left_perspective">
                 <div class="card_image">
-                    <div class="texto nome_carro">{{Nome do carro}}
-                        <div class="texto km">{{KM}}</div>
+                    <div v-model="carname" class="texto_left nome_carro">{{Nome do carro}}
+                        <div v-Model="km" class="texto_left km">{{KM}}</div>
                     </div>
 
                     <img src="https://j4v4.site/MC/carros/buccaneer.png" />
 
-                    <div class="texto valor">{{Valor}}</div>
+                    <div v-Model="valor" class="texto_left valor">{{Valor}}</div>
                 </div>
             </div>
-            <div class="perspectivefilho">
+            <div class="left_perspective">
                 <div class="card_image">
-                    <div class="texto nome_carro">{{Nome do carro}}
-                        <div class="texto km">{{KM}}</div>
+                    <div v-model="carname" class="texto_left nome_carro">{{Nome do carro}}
+                        <div v-Model="km" class="texto_left km">{{KM}}</div>
                     </div>
 
                     <img src="https://j4v4.site/MC/carros/picador.png" />
 
-                    <div class="texto valor">{{Valor}}</div>
+                    <div v-Model="valor" class="texto_left valor">{{Valor}}</div>
                 </div>
             </div>
-            <div class="perspectivefilho">
+            <div class="left_perspective">
                 <div class="card_image">
-                    <div class="texto nome_carro">{{Nome do carro}}
-                        <div class="texto km">{{KM}}</div>
+                    <div v-model="carname" class="texto_left nome_carro">{{Nome do carro}}
+                        <div v-Model="km" class="texto_left km">{{KM}}</div>
                     </div>
 
                     <img src="https://j4v4.site/MC/carros/impaler.png" />
 
-                    <div class="texto valor">{{Valor}}</div>
+                    <div v-Model="valor" class="texto_left valor">{{Valor}}</div>
+                </div>
+            </div>
+            <div class="left_perspective">
+                <div class="card_image">
+                    <div v-model="carname" class="texto_left nome_carro">{{Nome do carro}}
+                        <div v-Model="km" class="texto_left km">{{KM}}</div>
+                    </div>
+
+                    <img src="https://j4v4.site/MC/carros/impaler.png" />
+
+                    <div v-Model="valor" class="texto_left valor">{{Valor}}</div>
+                </div>
+            </div>
+            <div class="left_perspective">
+                <div class="card_image">
+                    <div v-model="carname" class="texto_left nome_carro">{{Nome do carro}}
+                        <div v-Model="km" class="texto_left km">{{KM}}</div>
+                    </div>
+
+                    <img src="https://j4v4.site/MC/carros/impaler.png" />
+
+                    <div v-Model="valor" class="texto_left valor">{{Valor}}</div>
+                </div>
+            </div>
+            <div class="left_perspective">
+                <div class="card_image">
+                    <div v-model="carname" class="texto_left nome_carro">{{Nome do carro}}
+                        <div v-Model="km" class="texto_left km">{{KM}}</div>
+                    </div>
+
+                    <img src="https://j4v4.site/MC/carros/impaler.png" />
+
+                    <div v-Model="valor" class="texto_left valor">{{Valor}}</div>
                 </div>
             </div>
         </div>
@@ -93,8 +158,82 @@
 
 
 
+        <!-- Menu lateral Direiro -->
+        <div onclick="mostrardescricao()">
+            <div class="right_texto desc_nome_carro">Monkey Dealership</div>
+             <div class="right_texto descricao_carro">
+                <p>descricao descricao descricao descricao descricao</p>
+            </div>
+            <div class="right_texto desc_valor_kg">Kg e valor</div>
+            <div class="right_texto desc_acel">Aceleracao</div>
+            <div class="right_texto desc_vel">Vel.Max</div>
+            <div class="right_texto desc_ade">Aderencia</div>
+            <div class="right_texto desc_fre">Frenagem</div>
+            <!-- <div class="right_perspective"></div> -->
+        </div>
 
 
+
+
+
+
+
+
+
+
+
+        <!-- Menu de Cores -->
+        <Footer style="overflow: hidden;">
+            <div class="cores">
+                <div class="cor" style="background-color: rgba(255,0,0);" onclick="mudarcor(255,0,0)"></div>
+                <div class="cor" style="background-color: rgba(255,255,0);" onclick="mudarcor(255,255,0)"> </div>
+                <div class="cor" style="background-color: rgba(255,0,0);" onclick="mudarcor(255,0,0)"></div>
+                <div class="cor" style="background-color: rgba(255,255,0);" onclick="mudarcor(255,255,0)"> </div>
+                <div class="cor" style="background-color: rgba(255,0,0);" onclick="mudarcor(255,0,0)"></div>
+                <div class="cor" style="background-color: rgba(255,255,0);" onclick="mudarcor(255,255,0)"> </div>
+                <div class="cor" style="background-color: rgba(255,0,0);" onclick="mudarcor(255,0,0)"></div>
+                <div class="cor" style="background-color: rgba(255,255,0);" onclick="mudarcor(255,255,0)"> </div>
+                <div class="cor" style="background-color: rgba(255,0,0);" onclick="mudarcor(255,0,0)"></div>
+                <div class="cor" style="background-color: rgba(255,255,0);" onclick="mudarcor(255,255,0)"> </div>
+                <div class="cor" style="background-color: rgba(255,0,0);" onclick="mudarcor(255,0,0)"></div>
+                <div class="cor" style="background-color: rgba(255,255,0);" onclick="mudarcor(255,255,0)"> </div>
+                <div class="cor" style="background-color: rgba(255,0,0);" onclick="mudarcor(255,0,0)"></div>
+                <div class="cor" style="background-color: rgba(255,255,0);" onclick="mudarcor(255,255,0)"> </div>
+                <div class="cor" style="background-color: rgba(255,0,0);" onclick="mudarcor(255,0,0)"></div>
+                <div class="cor" style="background-color: rgba(255,255,0);" onclick="mudarcor(255,255,0)"> </div>
+                <div class="cor" style="background-color: rgba(255,0,0);" onclick="mudarcor(255,0,0)"></div>
+                <div class="cor" style="background-color: rgba(255,255,0);" onclick="mudarcor(255,255,0)"> </div>
+                <div class="cor" style="background-color: rgba(255,0,0);" onclick="mudarcor(255,0,0)"></div>
+                <div class="cor" style="background-color: rgba(255,255,0);" onclick="mudarcor(255,255,0)"> </div>
+                <div class="cor" style="background-color: rgba(255,0,0);" onclick="mudarcor(255,0,0)"></div>
+                <div class="cor" style="background-color: rgba(255,255,0);" onclick="mudarcor(255,255,0)"> </div>
+                <div class="cor" style="background-color: rgba(255,0,0);" onclick="mudarcor(255,0,0)"></div>
+                <div class="cor" style="background-color: rgba(255,255,0);" onclick="mudarcor(255,255,0)"> </div>
+                <div class="cor" style="background-color: rgba(255,0,0);" onclick="mudarcor(255,0,0)"></div>
+                <div class="cor" style="background-color: rgba(255,255,0);" onclick="mudarcor(255,255,0)"> </div>
+                <div class="cor" style="background-color: rgba(255,0,0);" onclick="mudarcor(255,0,0)"></div>
+                <div class="cor" style="background-color: rgba(255,255,0);" onclick="mudarcor(255,255,0)"> </div>
+                <div class="cor" style="background-color: rgba(255,0,0);" onclick="mudarcor(255,0,0)"></div>
+                <div class="cor" style="background-color: rgba(255,255,0);" onclick="mudarcor(255,255,0)"> </div>
+                <div class="cor" style="background-color: rgba(255,0,0);" onclick="mudarcor(255,0,0)"></div>
+                <div class="cor" style="background-color: rgba(255,255,0);" onclick="mudarcor(255,255,0)"> </div>
+                <div class="cor" style="background-color: rgba(255,0,0);" onclick="mudarcor(255,0,0)"></div>
+                <div class="cor" style="background-color: rgba(255,255,0);" onclick="mudarcor(255,255,0)"> </div>
+                <div class="cor" style="background-color: rgba(255,0,0);" onclick="mudarcor(255,0,0)"></div>
+                <div class="cor" style="background-color: rgba(255,255,0);" onclick="mudarcor(255,255,0)"> </div>
+                <div class="cor" style="background-color: rgba(255,0,0);" onclick="mudarcor(255,0,0)"></div>
+                <div class="cor" style="background-color: rgba(255,255,0);" onclick="mudarcor(255,255,0)"> </div>
+            </div>
+
+            <button style="right: 220px;" onclick="testedrive()">Teste Drive</button>
+            <button onclick="comprar()">Comprar</button>
+        </Footer>
+
+
+
+
+
+    </div>
 </body>
 
 </html>
