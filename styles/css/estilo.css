@@ -32,7 +32,6 @@ body {
 
 
 
-
 /* ---------------- Barra de Pesquisa ---------------- */
 
 .caixa_search {
@@ -40,7 +39,7 @@ body {
     top: 5%;
     right: 52%;
     transform: translate(50%, -50%);
-    background-color: transparent;
+    background-color: #333;
     height: 40px;
     border-radius: 30px;
     border: 0.1px solid;
@@ -49,21 +48,18 @@ body {
 
 .caixa_search:hover>.caixa_texto {
     width: 150px;
-    padding: 0 6px;
+    padding: 0 40px;
 }
 
-.caixa_search:hover>.botao_search {
-    background-color: transparent;
-    margin-left: 3px;
-}
+
 
 .botao_search {
-    color: #333;
+    color: #f1f1f1;
     float: right;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.0);
+    background-color: #333;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -71,13 +67,19 @@ body {
     transition: 0.4s;
 }
 
+.caixa_search:hover>.botao_search {
+    background-color: #f1f1f1;
+    color: #333;
+    margin-left: 3px;
+}
+
 .caixa_texto {
     border: none;
-    background-color: rgba(0, 0, 0, 0.0);
+    background-color: rgba(0, 0, 0, 0.1);
     outline: none;
     float: left;
     padding: 0;
-    color: rgba(0, 0, 0, 0.8);
+    color: #f1f1f1;
     font-size: 16px;
     transition: 0.4s;
     line-height: 40px;
@@ -92,7 +94,6 @@ body {
 
 .icones {
     background-color: transparent;
-
 }
 
 .iconesair {
@@ -102,8 +103,8 @@ body {
 }
 
 .img_sair {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
 }
 
 .iconemaiszoom {
@@ -113,8 +114,9 @@ body {
 }
 
 .img_mais_zoom {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
+    transform: rotate(90deg);
 }
 
 .iconereduzirzoom {
@@ -124,8 +126,9 @@ body {
 }
 
 .img_reduzir_zoom {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
+    transform: rotate(-2deg);
 }
 
 
@@ -141,10 +144,9 @@ body {
 }
 
 .img_seta_direita{
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
 }
-
 
 .iconesetaesquerda{
     position: fixed;
@@ -153,10 +155,9 @@ body {
 }
 
 .img_seta_esquerda{
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
 }
-
 
 .iconeportasabertas {
     position: fixed;
@@ -165,8 +166,8 @@ body {
 }
 
 .img_portas_abertas {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
 }
 
 
